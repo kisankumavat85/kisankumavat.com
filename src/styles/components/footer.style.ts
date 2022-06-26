@@ -22,7 +22,7 @@ export const StyledFooter = styled.footer`
       justify-content: space-between;
 
       a {
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
         width: 33.33%;
         font-size: 1rem;
         color: ${(props) => props.theme.linkColor1};
