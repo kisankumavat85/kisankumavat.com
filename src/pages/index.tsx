@@ -29,7 +29,7 @@ const Home = (props) => {
             <br />
             I&apos;m <span>Kisan</span>
             <br />
-            Web Developer
+            Software Developer
           </h1>
           <div className="img-div">
             <Image
