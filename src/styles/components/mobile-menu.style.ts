@@ -8,7 +8,6 @@ export const StyledMobileMenu = styled.div`
   height: calc(100vh - 6rem);
   background-color: ${(props) => props.theme.backgroundColor1};
   z-index: 9;
-  transition: 2s linear 1s;
 
   .mobile-menu-container {
     list-style: none;

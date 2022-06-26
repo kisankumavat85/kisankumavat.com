@@ -10,7 +10,7 @@ export const StyledPosts = styled.section`
   }
 
   .card {
-    margin-bottom: 1.2rem;
+    margin-bottom: 2rem;
     cursor: pointer;
     border-radius: 0.5rem;
 
@@ -21,7 +21,7 @@ export const StyledPosts = styled.section`
 
       .card-title {
         color: ${(props) => props.theme.headingColor};
-        font-size: 1.125rem;
+        font-size: 1.2rem;
       }
 
       .card-date {

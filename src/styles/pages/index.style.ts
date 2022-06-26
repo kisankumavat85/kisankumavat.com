@@ -12,7 +12,7 @@ export const About = styled.div`
 
   .greetings {
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 4rem;
     color: ${(props) => props.theme.headingColor};
 
     span {
