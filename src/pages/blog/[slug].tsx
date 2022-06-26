@@ -21,7 +21,7 @@ const Post: FC<SlugPageProps> = (props) => {
   return (
     <>
       <Head>
-        <title>{data.title}</title>
+        <title>Kisan Kumavat | {data.title}</title>
       </Head>
       <StyledSlug>
         <div className="page-intro">

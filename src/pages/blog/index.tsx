@@ -37,7 +37,7 @@ const Blog: FC<BlogPageProps> = (props) => {
   return (
     <>
       <Head>
-        <title>Kisan Kumavat - Blog</title>
+        <title>Kisan Kumavat | Blog</title>
       </Head>
       <StyledBlog>
         <div className="page-intro">

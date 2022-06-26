@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
       <ThemeContext.Provider value={{ theme, setTheme }}>
         <ThemeProvider theme={theme === "light" ? themes.light : themes.dark}>
           <GlobalStyle />
-          <Component {...pageProps} />;
+          <Component {...pageProps} />
         </ThemeProvider>
       </ThemeContext.Provider>
     </>

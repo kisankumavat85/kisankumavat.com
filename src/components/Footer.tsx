@@ -16,9 +16,9 @@ const Footer = () => {
             <Link href="/blog">
               <a className="nav-link">Blog</a>
             </Link>
-            <Link href="/contact">
+            {/* <Link href="/contact">
               <a className="nav-link">Contact</a>
-            </Link>
+            </Link> */}
           </div>
           <div className="social-container">
             <p className="lets-connect">Find me on</p>
