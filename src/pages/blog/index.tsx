@@ -43,9 +43,9 @@ const Blog: FC<BlogPageProps> = (props) => {
         <div className="page-intro">
           <h1>Blog</h1>
           <p>
-            Recently I have started writing online about JavaScript and it's
-            library and tools like React, Next.js, TypeScript and ES6 features.
-            Use search to filter by title.
+            Recently I have started writing online about JavaScript and
+            it&apos;s library and tools like React, Next.js, TypeScript and ES6
+            features. Use search to filter by title.
           </p>
           <div className="search-container">
             <span>
