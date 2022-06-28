@@ -16,7 +16,7 @@ const ThemeToggler = () => {
   };
 
   return (
-    <StyledThemeToggler>
+    <StyledThemeToggler title="Change theme">
       <button onClick={handleThemeChange}>
         {theme === "light" ? <IoMdMoon /> : <IoMdSunny />}
       </button>

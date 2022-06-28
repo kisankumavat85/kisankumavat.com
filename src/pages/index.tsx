@@ -20,7 +20,7 @@ const Home = (props) => {
   return (
     <>
       <Head>
-        <title>Kisan Kumavat</title>
+        <title>Kisan Kumavat | Web Developer</title>
       </Head>
       <About>
         <div className="greetings-container">

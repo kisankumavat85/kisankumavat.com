@@ -37,15 +37,15 @@ const Blog: FC<BlogPageProps> = (props) => {
   return (
     <>
       <Head>
-        <title>Kisan Kumavat - Blog</title>
+        <title>Kisan Kumavat | Blog</title>
       </Head>
       <StyledBlog>
         <div className="page-intro">
           <h1>Blog</h1>
           <p>
-            Recently I have started writing online about JavaScript, React,
-            Next.js, TypeScript, ES6 features etc. Use search to filter by
-            title.
+            Recently I have started writing online about JavaScript and
+            it&apos;s library and tools like React, Next.js, TypeScript and ES6
+            features. Use search to filter by title.
           </p>
           <div className="search-container">
             <span>
