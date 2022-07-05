@@ -6,7 +6,12 @@ import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeHighlight from "rehype-highlight";
 
-export const POSTS_FOLDER_PATH = path.join(process.cwd(), "src", "posts");
+export const POSTS_FOLDER_PATH = path.join(
+  process.cwd(),
+  "src",
+  "data",
+  "posts"
+);
 
 export const getAllPosts = () => {
   const files = fs.readdirSync(POSTS_FOLDER_PATH);
@@ -16,7 +21,7 @@ export const getAllPosts = () => {
     const slug = fileName.replace(".mdx", "");
     // Get frontmatter
     const markdownWithMeta = fs.readFileSync(
-      path.join(process.cwd(), "src", "posts", fileName),
+      path.join(POSTS_FOLDER_PATH, fileName),
       "utf-8"
     );
     const { data } = matter(markdownWithMeta);
@@ -26,7 +31,7 @@ export const getAllPosts = () => {
     };
   });
 
-  return posts;
+  return posts.reverse();
 };
 
 export const getFeaturedPosts = () => {
@@ -37,7 +42,7 @@ export const getFeaturedPosts = () => {
   for (let i = 0; i < files.length; i++) {
     const slug = files[i].replace(".mdx", "");
     const markdownWithMeta = fs.readFileSync(
-      path.join(process.cwd(), "src", "posts", files[i]),
+      path.join(POSTS_FOLDER_PATH, files[i]),
       "utf-8"
     );
     const { data } = matter(markdownWithMeta);
@@ -50,12 +55,12 @@ export const getFeaturedPosts = () => {
     if (posts.length === 3) break;
   }
 
-  return posts;
+  return posts.reverse();
 };
 
 export const getPostBySlug = async (slug: string) => {
   const markdownWithMeta = fs.readFileSync(
-    path.join(process.cwd(), "src", "posts", slug + ".mdx"),
+    path.join(POSTS_FOLDER_PATH, slug + ".mdx"),
     "utf-8"
   );
 

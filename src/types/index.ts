@@ -1,4 +1,5 @@
 import { MDXRemoteSerializeResult } from "next-mdx-remote";
+import { Dispatch, SetStateAction } from "react";
 
 type PostMeta = {
   title: string;
@@ -39,4 +40,9 @@ export type SlugPageProps = {
   slug: string;
   data: PostMeta;
   content: MDXRemoteSerializeResult<Record<string, unknown>>;
+};
+
+export type SearchInputProps = {
+  setQuery: Dispatch<SetStateAction<string>>;
+  placeholder: string;
 };

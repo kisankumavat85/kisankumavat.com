@@ -16,6 +16,11 @@ const MobileMenu = () => {
           </Link>
         </li>
         <li>
+          <Link href="/projects">
+            <a>Projects</a>
+          </Link>
+        </li>
+        <li>
           <Link href="https://twitter.com/KisanKumavat8">
             <a>Twitter</a>
           </Link>

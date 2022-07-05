@@ -33,6 +33,24 @@ const Header = () => {
                     Blog
                   </a>
                 </Link>
+                <Link href="/projects">
+                  <a
+                    className={`nav-link ${
+                      pathname === "/projects" && "active"
+                    }`}
+                  >
+                    Projects
+                  </a>
+                </Link>
+                <Link href="/dashboard">
+                  <a
+                    className={`nav-link ${
+                      pathname === "/dashboard" && "active"
+                    }`}
+                  >
+                    Space
+                  </a>
+                </Link>
               </nav>
               <ThemeToggler />
             </div>

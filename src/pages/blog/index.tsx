@@ -13,6 +13,7 @@ import { StyledBlog } from "../../styles/pages/blog.style";
 import { BlogPageProps, PostMetaAndSlug } from "../../types";
 import { getAllPosts, getFeaturedPosts } from "../../apis";
 import FeaturedPosts from "../../components/FeaturedPosts";
+import SearchInput from "../../components/SearchInput";
 
 const Blog: FC<BlogPageProps> = (props) => {
   const { posts } = props;
@@ -47,17 +48,7 @@ const Blog: FC<BlogPageProps> = (props) => {
             it&apos;s library and tools like React, Next.js, TypeScript and ES6
             features. Use search to filter by title.
           </p>
-          <div className="search-container">
-            <span>
-              <BiSearchAlt />
-            </span>
-            <input
-              type="text"
-              placeholder="Search blog"
-              className="search-input"
-              onChange={(e) => setQuery(e.target.value)}
-            />
-          </div>
+          <SearchInput setQuery={setQuery} placeholder="Search blog" />
         </div>
         {query === "" && <FeaturedPosts posts={posts.featuredPosts} />}
         <Posts posts={filteredPosts} title="All Posts" />

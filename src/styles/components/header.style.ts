@@ -22,11 +22,12 @@ export const StyledHeader = styled.header`
     align-items: center;
   }
 
-  nav {
-    width: 7rem;
+  .nav-links {
+    /* width: 7rem; */
     margin-right: 1rem;
     display: flex;
     justify-content: space-around;
+    gap: 1rem;
   }
 
   .nav-link {
