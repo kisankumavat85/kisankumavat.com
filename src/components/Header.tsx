@@ -42,7 +42,7 @@ const Header = () => {
                     Projects
                   </a>
                 </Link>
-                <Link href="/dashboard">
+                <Link href="/space">
                   <a
                     className={`nav-link ${
                       pathname === "/dashboard" && "active"

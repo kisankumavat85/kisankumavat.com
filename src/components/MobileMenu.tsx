@@ -21,18 +21,8 @@ const MobileMenu = () => {
           </Link>
         </li>
         <li>
-          <Link href="https://twitter.com/KisanKumavat8">
-            <a>Twitter</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="https://www.linkedin.com/in/kisan-kumavat-966186190/">
-            <a>LinkedIn</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="https://github.com/kisankumavat85">
-            <a>GitHub</a>
+          <Link href="/space">
+            <a>Space</a>
           </Link>
         </li>
       </ul>

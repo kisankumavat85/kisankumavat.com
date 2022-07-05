@@ -19,6 +19,9 @@ const Footer = () => {
             <Link href="/projects">
               <a className="nav-link">Projects</a>
             </Link>
+            <Link href="/space">
+              <a className="nav-link">Space</a>
+            </Link>
           </div>
           <div className="social-container">
             <p className="lets-connect">Find me on</p>
