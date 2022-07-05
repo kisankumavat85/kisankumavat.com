@@ -65,6 +65,7 @@ export const StyledSlug = styled.div`
 
     a {
       color: ${(props) => props.theme.headingColor};
+      text-decoration: underline;
     }
 
     pre {
