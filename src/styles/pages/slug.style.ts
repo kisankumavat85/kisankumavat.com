@@ -50,6 +50,10 @@ export const StyledSlug = styled.div`
     h6 {
       margin-bottom: 1rem;
       color: ${(props) => props.theme.headingColor};
+
+      a {
+        text-decoration: none;
+      }
     }
 
     ul,

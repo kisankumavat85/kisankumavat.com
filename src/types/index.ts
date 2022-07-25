@@ -46,3 +46,7 @@ export type SearchInputProps = {
   setQuery: Dispatch<SetStateAction<string>>;
   placeholder: string;
 };
+
+export type HomePageProps = {
+  posts: PostMetaAndSlug[];
+};

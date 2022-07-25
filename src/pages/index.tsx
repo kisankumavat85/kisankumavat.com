@@ -1,3 +1,4 @@
+import { FC } from "react";
 import Image from "next/image";
 import Head from "next/head";
 
@@ -11,10 +12,12 @@ import { getFeaturedPosts } from "../apis";
 import { About } from "../styles/pages/index.style";
 
 // Assets
-import Pofile_Image from "../../public/images/profile_img.jpg";
-import { SiGithub, SiInstagram, SiLinkedin, SiTwitter } from "react-icons/si";
+import pofileImage from "../../public/images/profile_img.jpg";
 
-const Home = (props) => {
+// Types
+import { HomePageProps } from "../types";
+
+const Home: FC<HomePageProps> = (props) => {
   const { posts } = props;
 
   return (
@@ -27,13 +30,14 @@ const Home = (props) => {
           <h1 className="greetings">
             Hi,
             <br />
-            I&apos;m <span>Kisan</span>
+            I&apos;m
+            <span>Kisan</span>
             <br />
             Web Developer
           </h1>
           <div className="img-div">
             <Image
-              src={Pofile_Image}
+              src={pofileImage}
               alt="Kisan Kumavat"
               layout="fill"
               objectFit="cover"

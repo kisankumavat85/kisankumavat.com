@@ -29,7 +29,7 @@ const Projects: FC = () => {
 
         <section className="projects-section">
           {projects.map((project) => (
-            <div className="project">
+            <div key={project.name} className="project">
               <h4 className="project-name">
                 <span>{project.name}</span>
                 <span className="project-name-arrow">
@@ -39,7 +39,9 @@ const Projects: FC = () => {
               <div className="project-description">{project.description}</div>
               <div className="project-tech">
                 {project.tech.map((t) => (
-                  <span className="tech-item">{t}</span>
+                  <span key={t} className="tech-item">
+                    {t}
+                  </span>
                 ))}
               </div>
             </div>

@@ -7,7 +7,7 @@ import { setItem } from "../utils/storage";
 // Styles
 import { StyledThemeToggler } from "../styles/components/theme-toggler";
 
-const ThemeToggler = () => {
+function ThemeToggler() {
   const { theme, setTheme } = useContext(ThemeContext);
 
   const handleThemeChange = () => {
@@ -17,11 +17,11 @@ const ThemeToggler = () => {
 
   return (
     <StyledThemeToggler title="Change theme">
-      <button onClick={handleThemeChange}>
+      <button type="button" onClick={handleThemeChange}>
         {theme === "light" ? <IoMdMoon /> : <IoMdSunny />}
       </button>
     </StyledThemeToggler>
   );
-};
+}
 
 export default ThemeToggler;

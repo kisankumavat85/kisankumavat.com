@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { IoMdClose, IoMdMenu } from "react-icons/io";
-import { StyledMobileMenuButton } from "../styles/components/mobile-menu-button.style";
+
 import MobileMenu from "./MobileMenu";
+import { StyledMobileMenuButton } from "../styles/components/mobile-menu-button.style";
 
 const MobileMenuButton = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -16,16 +17,18 @@ const MobileMenuButton = () => {
     }
   };
 
-  useEffect(() => {
-    return function cleanup() {
-      document.body.style.overflow = "";
-    };
-  }, []);
+  function cleanup() {
+    document.body.style.overflow = "";
+  }
+
+  useEffect(() => cleanup, []);
 
   return (
     <>
       <StyledMobileMenuButton onClick={handleMenuClick}>
-        <button>{isMenuOpen ? <IoMdClose /> : <IoMdMenu />}</button>
+        <button type="button">
+          {isMenuOpen ? <IoMdClose /> : <IoMdMenu />}
+        </button>
       </StyledMobileMenuButton>
       {isMenuOpen && <MobileMenu />}
     </>

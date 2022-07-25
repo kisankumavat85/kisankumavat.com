@@ -7,27 +7,26 @@ const MobileMenu = () => {
       <ul className="mobile-menu-container">
         <li>
           <Link href="/">
-            <a>Home</a>
+            <a href="/#">Home</a>
           </Link>
         </li>
         <li>
           <Link href="/blog">
-            <a>Blog</a>
+            <a href="/#">Blog</a>
           </Link>
         </li>
         <li>
           <Link href="/projects">
-            <a>Projects</a>
+            <a href="/#">Projects</a>
           </Link>
         </li>
         <li>
           <Link href="/space">
-            <a>Space</a>
+            <a href="/#">Space</a>
           </Link>
         </li>
       </ul>
     </StyledMobileMenu>
   );
 };
-
 export default MobileMenu;

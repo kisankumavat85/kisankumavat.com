@@ -7,36 +7,44 @@ const Footer = () => {
   return (
     <StyledFooter>
       <Container>
-        <div className="divider"></div>
+        <div className="divider" />
         <div className="links-social-container">
           <div className="links-container">
             <Link href="/">
-              <a className="nav-link">Home</a>
+              <a href="/#" className="nav-link">
+                Home
+              </a>
             </Link>
             <Link href="/blog">
-              <a className="nav-link">Blog</a>
+              <a href="/#" className="nav-link">
+                Blog
+              </a>
             </Link>
             <Link href="/projects">
-              <a className="nav-link">Projects</a>
+              <a href="/#" className="nav-link">
+                Projects
+              </a>
             </Link>
             <Link href="/space">
-              <a className="nav-link">Space</a>
+              <a href="/#" className="nav-link">
+                Space
+              </a>
             </Link>
           </div>
           <div className="social-container">
             <p className="lets-connect">Find me on</p>
             <Link href="https://twitter.com/KisanKumavat8">
-              <a className="nav-link">
+              <a href="/#" className="nav-link">
                 <SiTwitter />
               </a>
             </Link>
             <Link href="https://www.linkedin.com/in/kisan-kumavat-966186190/">
-              <a className="nav-link">
+              <a href="/#" className="nav-link">
                 <SiLinkedin />
               </a>
             </Link>
             <Link href="https://github.com/kisankumavat85">
-              <a className="nav-link">
+              <a href="/#" className="nav-link">
                 <SiGithub />
               </a>
             </Link>

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledFooter = styled.footer`
   display: flex;
   justify-content: center;
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
 
   .divider {
     width: 100%;

@@ -25,11 +25,12 @@ const Blog: FC<BlogPageProps> = (props) => {
   useEffect(() => {
     const trimedQuery = query.trim();
     if (trimedQuery) {
-      setFilteredPosts(
-        posts.allPosts.filter((post) =>
-          post.data.title.toLowerCase().includes(trimedQuery.toLowerCase())
-        )
-      );
+      const filtredPosts = posts.allPosts.filter((post) => {
+        return post.data.title
+          .toLowerCase()
+          .includes(trimedQuery.toLowerCase());
+      });
+      setFilteredPosts(filtredPosts);
     } else {
       setFilteredPosts(posts.allPosts);
     }

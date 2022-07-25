@@ -1,10 +1,15 @@
+import { FC } from "react";
+
+import Footer from "./Footer";
+import Header from "./Header";
 import { Container } from "../styles/common.style";
 import { StyledMain } from "../styles/components/layout.style";
-import Footer from "./Footer";
 
-import Header from "./Header";
+interface Props {
+  children: JSX.Element;
+}
 
-const Layout = (props) => {
+const Layout: FC<Props> = (props) => {
   const { children } = props;
   return (
     <>

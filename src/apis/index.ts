@@ -37,7 +37,7 @@ export const getAllPosts = () => {
 export const getFeaturedPosts = () => {
   const files = fs.readdirSync(POSTS_FOLDER_PATH);
 
-  let posts = [];
+  const posts = [];
 
   for (let i = 0; i < files.length; i++) {
     const slug = files[i].replace(".mdx", "");
@@ -60,7 +60,7 @@ export const getFeaturedPosts = () => {
 
 export const getPostBySlug = async (slug: string) => {
   const markdownWithMeta = fs.readFileSync(
-    path.join(POSTS_FOLDER_PATH, slug + ".mdx"),
+    path.join(POSTS_FOLDER_PATH, `${slug}.mdx`),
     "utf-8"
   );
 
