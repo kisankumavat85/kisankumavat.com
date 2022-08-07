@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledProjects = styled.div`
+const StyledProjects = styled.div`
   .page-intro {
     margin-bottom: 3rem;
 
@@ -23,16 +23,18 @@ export const StyledProjects = styled.div`
     }
 
     .project-name {
+      display: flex;
+      justify-content: space-between;
       margin-bottom: 0.5rem;
-      font-size: 1.2rem;
       color: ${(props) => props.theme.headingColor};
+      font-size: 1.2rem;
+      /* gap: 5px; */
     }
 
-    .project-name-arrow {
-      position: relative;
-      bottom: -3px;
+    .icon {
+      margin-left: 1rem;
+      cursor: pointer;
       font-size: 1.3rem;
-      margin-left: 0.3rem;
     }
 
     .project-description {
@@ -57,3 +59,5 @@ export const StyledProjects = styled.div`
     }
   }
 `;
+
+export default StyledProjects;

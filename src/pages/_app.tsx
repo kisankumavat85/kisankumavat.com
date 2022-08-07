@@ -12,7 +12,6 @@ import { getItem } from "../utils/storage";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [theme, setTheme] = useState("light");
-  console.log("pageProps", pageProps);
 
   useEffect(() => {
     const storedTheme = getItem("theme");
@@ -24,7 +23,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       theme,
       setTheme,
     }),
-    []
+    [theme]
   );
 
   return (

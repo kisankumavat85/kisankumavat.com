@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledSpace = styled.div`
+const StyledSpace = styled.div`
   .page-intro {
     margin-bottom: 3rem;
 
@@ -57,3 +57,5 @@ export const StyledSpace = styled.div`
     }
   }
 `;
+
+export default StyledSpace;

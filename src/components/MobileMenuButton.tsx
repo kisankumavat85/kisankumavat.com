@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { IoMdClose, IoMdMenu } from "react-icons/io";
 
 import MobileMenu from "./MobileMenu";
-import { StyledMobileMenuButton } from "../styles/components/mobile-menu-button.style";
+import StyledMobileMenuButton from "../styles/components/mobile-menu-button.style";
 
 const MobileMenuButton = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);

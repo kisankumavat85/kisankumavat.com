@@ -2,7 +2,7 @@ import { FC } from "react";
 import Link from "next/link";
 
 // Styles
-import { StyledPosts } from "../styles/components/posts.style";
+import StyledPosts from "../styles/components/posts.style";
 
 // Types
 import { PostsProps } from "../types";

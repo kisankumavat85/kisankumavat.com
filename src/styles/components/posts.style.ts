@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledPosts = styled.section`
+const StyledPosts = styled.section`
   margin-bottom: 3rem;
 
   .featured-posts-heading {
@@ -58,3 +58,5 @@ export const StyledPosts = styled.section`
     }
   }
 `;
+
+export default StyledPosts;

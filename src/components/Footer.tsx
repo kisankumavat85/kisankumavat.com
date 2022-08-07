@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { SiGithub, SiLinkedin, SiTwitter } from "react-icons/si";
-import { Container } from "../styles/common.style";
-import { StyledFooter } from "../styles/components/footer.style";
+import Container from "../styles/common.style";
+import StyledFooter from "../styles/components/footer.style";
 
 const Footer = () => {
   return (

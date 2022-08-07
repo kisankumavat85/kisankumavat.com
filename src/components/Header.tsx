@@ -6,8 +6,8 @@ import ThemeToggler from "./ThemeToggler";
 import MobileMenuButton from "./MobileMenuButton";
 
 // Styles
-import { Container } from "../styles/common.style";
-import { StyledHeader } from "../styles/components/header.style";
+import Container from "../styles/common.style";
+import StyledHeader from "../styles/components/header.style";
 
 const Header = () => {
   const { pathname } = useRouter();
@@ -51,9 +51,7 @@ const Header = () => {
               <Link href="/space">
                 <a
                   href="/#"
-                  className={`nav-link ${
-                    pathname === "/dashboard" && "active"
-                  }`}
+                  className={`nav-link ${pathname === "/space" && "active"}`}
                 >
                   Space
                 </a>

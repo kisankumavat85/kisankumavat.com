@@ -1,13 +1,11 @@
 import React from "react";
-import {
-  SiGithub, SiInstagram, SiLinkedin, SiTwitter,
-} from "react-icons/si";
+import { SiGithub, SiInstagram, SiLinkedin, SiTwitter } from "react-icons/si";
 
 // Components
 import withLayout from "../../components/HOC/withLayout";
 
 // Styles
-import { StyledContact } from "../../styles/pages/contact.style";
+import StyledContact from "../../styles/pages/contact.style";
 
 const Blogs = () => (
   <StyledContact>

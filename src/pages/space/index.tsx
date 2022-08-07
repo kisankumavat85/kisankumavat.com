@@ -6,7 +6,7 @@ import withLayout from "../../components/HOC/withLayout";
 import SearchInput from "../../components/SearchInput";
 import projects from "../../data/projects";
 
-import { StyledSpace } from "../../styles/pages/space.style";
+import StyledSpace from "../../styles/pages/space.style";
 
 const Space: FC = () => {
   const [query, setQuery] = useState<string>("");
@@ -19,15 +19,17 @@ const Space: FC = () => {
 
       <StyledSpace>
         <div className="page-intro">
-          <h1>Space</h1>
-          <p>
-            Here are some of my Projects with Tech-Stack. Use search to filter
-            Project by name or Tech-Stack.
-          </p>
+          <h1>Page under Construction...</h1>
+          {/* <p>
+            This is my space where I share things that I like do, Like listing
+            Books and Movies.
+          </p> */}
           {/* <SearchInput setQuery={setQuery} placeholder="Search project" /> */}
         </div>
 
-        <section className="space-section">{/*  */}</section>
+        {/* <section className="space-section">
+          <h2 className="heading2">Kisan</h2>
+        </section> */}
       </StyledSpace>
     </>
   );

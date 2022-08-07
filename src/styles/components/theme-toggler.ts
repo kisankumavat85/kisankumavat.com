@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { DARK_SHADE_V12, DARK_SHADE_V9 } from "../colors.style";
 
-export const StyledThemeToggler = styled.div`
+const StyledThemeToggler = styled.div`
   button {
     display: flex;
     justify-content: center;
@@ -19,3 +19,5 @@ export const StyledThemeToggler = styled.div`
     }
   }
 `;
+
+export default StyledThemeToggler;

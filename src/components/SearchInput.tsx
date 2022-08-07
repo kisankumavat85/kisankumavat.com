@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { BiSearchAlt } from "react-icons/bi";
 
-import { StyledSearchInput } from "../styles/components/search-input.style";
+import StyledSearchInput from "../styles/components/search-input.style";
 import { SearchInputProps } from "../types";
 
 const SearchInput: FC<SearchInputProps> = (props) => {

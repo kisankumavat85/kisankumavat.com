@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
-export const StyledHeader = styled.header`
+const StyledHeader = styled.header`
   display: flex;
+  /* border-bottom: 1px solid ${(props) => props.theme.borderColor}; */
   justify-content: center;
 
   .nav-container {
@@ -46,3 +47,5 @@ export const StyledHeader = styled.header`
     }
   }
 `;
+
+export default StyledHeader;

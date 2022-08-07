@@ -2,8 +2,8 @@ import { FC } from "react";
 
 import Footer from "./Footer";
 import Header from "./Header";
-import { Container } from "../styles/common.style";
-import { StyledMain } from "../styles/components/layout.style";
+import Container from "../styles/common.style";
+import StyledMain from "../styles/components/layout.style";
 
 interface Props {
   children: JSX.Element;

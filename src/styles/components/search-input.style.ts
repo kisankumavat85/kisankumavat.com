@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledSearchInput = styled.div`
+const StyledSearchInput = styled.div`
   width: 100%;
   padding: 1rem 0 0 0;
   position: relative;
@@ -24,3 +24,5 @@ export const StyledSearchInput = styled.div`
     color: ${(props) => props.theme.paragraphColor1};
   }
 `;
+
+export default StyledSearchInput;

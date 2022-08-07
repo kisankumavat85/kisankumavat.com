@@ -8,7 +8,7 @@ import { MDXRemote } from "next-mdx-remote";
 import withLayout from "../../components/HOC/withLayout";
 
 // Styles
-import { StyledSlug } from "../../styles/pages/slug.style";
+import StyledSlug from "../../styles/pages/slug.style";
 import "highlight.js/styles/hybrid.css";
 
 // Types

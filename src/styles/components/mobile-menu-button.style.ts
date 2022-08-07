@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledMobileMenuButton = styled.div`
+const StyledMobileMenuButton = styled.div`
   display: none;
 
   button {
@@ -24,3 +24,5 @@ export const StyledMobileMenuButton = styled.div`
     display: block;
   }
 `;
+
+export default StyledMobileMenuButton;

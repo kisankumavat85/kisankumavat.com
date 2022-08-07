@@ -1,6 +1,7 @@
 import { FC } from "react";
 import Image from "next/image";
 import Head from "next/head";
+import { MdDownload, MdKeyboardArrowDown } from "react-icons/md";
 
 // Components
 import FeaturedPosts from "../components/FeaturedPosts";
@@ -9,7 +10,7 @@ import withLayout from "../components/HOC/withLayout";
 import { getFeaturedPosts } from "../apis";
 
 // Styles
-import { About } from "../styles/pages/index.style";
+import StyledAbout from "../styles/pages/index.style";
 
 // Assets
 import pofileImage from "../../public/images/profile_img.jpg";
@@ -25,49 +26,35 @@ const Home: FC<HomePageProps> = (props) => {
       <Head>
         <title>Kisan Kumavat | Web Developer</title>
       </Head>
-      <About>
-        <div className="greetings-container">
+      <StyledAbout>
+        <div className="container">
           <h1 className="greetings">
-            Hi,
+            Hi, I&apos;m <span className="kisan">Kisan</span>
             <br />
-            I&apos;m
-            <span>Kisan</span>
-            <br />
-            Web Developer
+            <span className="developer">Web Developer</span>
           </h1>
-          <div className="img-div">
-            <Image
-              src={pofileImage}
-              alt="Kisan Kumavat"
-              layout="fill"
-              objectFit="cover"
-            />
+          <div className="about-div">
+            <p className="about">
+              <span>&quot;</span>I love to code in JavaScript. I use tools like
+              React, Next.js and TypeScript to build modern Web Apps. Currently
+              working as Jr. Software Engineer.<span>&quot;</span>
+            </p>
+            <div className="resume-div">
+              <span className="resume">Resume </span>
+              <div className="resume-icon">
+                <MdDownload />
+              </div>
+            </div>
+            <div className="see-more-arrow">
+              <span>See Work</span>
+              <MdKeyboardArrowDown className="arrow" />
+            </div>
           </div>
         </div>
-        <p className="about">
-          I love to code in JavaScript. I use React / Next.js to build modern
-          Web apps. Currently working as Junior Software Engineer at Green Apex
-          Technolabs, India.
-        </p>
-        {/* <div className="contact-cv-container">
-          <div className="contact-conatiner">
-            <div className="contact-item">
-              <SiTwitter />
-            </div>
-            <div className="contact-item">
-              <SiLinkedin />
-            </div>
-            <div className="contact-item">
-              <SiGithub />
-            </div>
-          </div>
-          <div className="cv-container">
-            <a href="#">Download CV</a>
-          </div>
-        </div> */}
+
         <SkillsSection />
         <FeaturedPosts posts={posts} />
-      </About>
+      </StyledAbout>
     </>
   );
 };

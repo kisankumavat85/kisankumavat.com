@@ -6,7 +6,7 @@ import {
   SiTypescript,
 } from "react-icons/si";
 
-import { StyledSkillsSection } from "../styles/components/skills-section.style";
+import StyledSkillsSection from "../styles/components/skills-section.style";
 
 const SkillsSection = () => {
   return (

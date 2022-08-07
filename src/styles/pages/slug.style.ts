@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledSlug = styled.div`
+const StyledSlug = styled.div`
   margin-bottom: 2rem;
 
   .page-intro {
@@ -104,3 +104,5 @@ export const StyledSlug = styled.div`
     }
   }
 `;
+
+export default StyledSlug;

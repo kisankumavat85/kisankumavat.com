@@ -7,7 +7,7 @@ import withLayout from "../../components/HOC/withLayout";
 import Posts from "../../components/Posts";
 
 // Styles
-import { StyledBlog } from "../../styles/pages/blog.style";
+import StyledBlog from "../../styles/pages/blog.style";
 
 // Types
 import { BlogPageProps, PostMetaAndSlug } from "../../types";

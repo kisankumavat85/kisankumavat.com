@@ -5,7 +5,7 @@ import { IoMdMoon, IoMdSunny } from "react-icons/io";
 import { setItem } from "../utils/storage";
 
 // Styles
-import { StyledThemeToggler } from "../styles/components/theme-toggler";
+import StyledThemeToggler from "../styles/components/theme-toggler";
 
 function ThemeToggler() {
   const { theme, setTheme } = useContext(ThemeContext);

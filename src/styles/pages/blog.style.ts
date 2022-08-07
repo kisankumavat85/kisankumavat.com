@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledBlog = styled.div`
+const StyledBlog = styled.div`
   .page-intro {
     margin-bottom: 3rem;
 
@@ -15,3 +15,5 @@ export const StyledBlog = styled.div`
     }
   }
 `;
+
+export default StyledBlog;

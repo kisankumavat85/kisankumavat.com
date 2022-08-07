@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-export const StyledFooter = styled.footer`
+const StyledFooter = styled.footer`
   display: flex;
   justify-content: center;
-  margin-bottom: 6rem;
+  margin-bottom: 5rem;
 
   .divider {
     width: 100%;
@@ -50,3 +50,5 @@ export const StyledFooter = styled.footer`
     }
   }
 `;
+
+export default StyledFooter;

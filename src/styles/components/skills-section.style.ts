@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledSkillsSection = styled.section`
+const StyledSkillsSection = styled.section`
   margin-bottom: 3rem;
 
   .skills-heading {
@@ -49,3 +49,5 @@ export const StyledSkillsSection = styled.section`
     }
   }
 `;
+
+export default StyledSkillsSection;
