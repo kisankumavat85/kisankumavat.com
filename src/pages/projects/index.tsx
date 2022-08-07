@@ -52,9 +52,9 @@ const Projects: FC = () => {
               <div className="project-description">{project.description}</div>
               <div className="project-tech">
                 {project.tech.map((t) => (
-                  <span key={t} className="tech-item">
+                  <p key={t} className="tech-item">
                     {t}
-                  </span>
+                  </p>
                 ))}
               </div>
             </div>

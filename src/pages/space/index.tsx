@@ -19,7 +19,7 @@ const Space: FC = () => {
 
       <StyledSpace>
         <div className="page-intro">
-          <h1>Page under Construction...</h1>
+          <h1>Page under Construction</h1>
           {/* <p>
             This is my space where I share things that I like do, Like listing
             Books and Movies.

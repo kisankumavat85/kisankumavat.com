@@ -28,7 +28,7 @@ const StyledProjects = styled.div`
       margin-bottom: 0.5rem;
       color: ${(props) => props.theme.headingColor};
       font-size: 1.2rem;
-      /* gap: 5px; */
+      font-weight: 600;
     }
 
     .icon {
@@ -47,10 +47,11 @@ const StyledProjects = styled.div`
     .project-tech {
       margin-left: 1.5rem;
 
-      span {
+      p {
+        display: inline-block;
         font-size: 0.8rem;
         padding: 3px 5px;
-        margin-right: 5px;
+        margin: 3px;
         font-weight: 500;
         border-radius: 3px;
         border: 1px solid ${(props) => props.theme.borderColor};

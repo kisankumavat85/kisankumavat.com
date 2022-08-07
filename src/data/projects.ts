@@ -11,7 +11,15 @@ const projects = [
     name: "Portfolio v1 dummy",
     description:
       "A web app to help you foster meaningful relationships within your community through events. Get people registered for your events without any hassle.",
-    tech: ["Next.js", "TypeScript", "Styled Components", "MDX"],
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "Styled Components",
+      "MDX",
+      "TypeScript",
+      "Styled Components",
+      "MDX",
+    ],
     live: "https://devkisan.vercel.app/",
     githubLink: "https://github.com/kisankumavat85/kisankumavat.com",
   },
