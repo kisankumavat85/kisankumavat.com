@@ -86,20 +86,17 @@ const StyledAbout = styled.div`
       height: calc(100vh - 96px);
     }
     .greetings {
-      font-size: 2.5rem;
+      font-size: 1.8rem;
 
       .developer {
-        font-size: 3rem;
+        font-size: 2.5rem;
       }
     }
 
-    .img-div {
-      height: 8rem;
-      width: 8rem;
-    }
-
-    .about {
-      font-size: 1.1rem;
+    .about-div {
+      .about {
+        font-size: 1rem;
+      }
     }
   }
 `;
