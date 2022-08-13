@@ -93,8 +93,8 @@ const StyledAbout = styled.div`
 
     .img-div {
       margin-bottom: 1.5rem;
-      width: 8.5rem;
-      height: 8.5rem;
+      width: 8rem;
+      height: 8rem;
     }
 
     .greetings {
@@ -108,7 +108,7 @@ const StyledAbout = styled.div`
 
     .about-div {
       .about {
-        font-size: 1.2rem;
+        font-size: 1rem;
       }
     }
   }
