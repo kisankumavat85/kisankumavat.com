@@ -99,7 +99,7 @@ const StyledAbout = styled.div`
 
     .greetings {
       font-size: 1.8rem;
-      margin-bottom: 2rem;
+      margin-bottom: 0.5rem;
 
       .developer {
         font-size: 2.8rem;
