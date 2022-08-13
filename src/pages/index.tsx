@@ -13,7 +13,7 @@ import { getFeaturedPosts } from "../apis";
 import StyledAbout from "../styles/pages/index.style";
 
 // Assets
-import pofileImage from "../../public/images/profile_img.jpg";
+import profileImage from "../../public/images/profile_img.jpg";
 
 // Types
 import { HomePageProps } from "../types";
@@ -28,6 +28,14 @@ const Home: FC<HomePageProps> = (props) => {
       </Head>
       <StyledAbout>
         <div className="container">
+          <div className="img-div">
+            <Image
+              src={profileImage}
+              alt="Kisan Kumavat"
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
           <h1 className="greetings">
             Hi, I&apos;m <span className="kisan">Kisan</span>
             <br />

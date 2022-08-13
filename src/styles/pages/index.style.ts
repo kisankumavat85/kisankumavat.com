@@ -11,6 +11,17 @@ const StyledAbout = styled.div`
     align-items: center;
   }
 
+  .img-div {
+    position: relative;
+    width: 8rem;
+    height: 8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .img-div img {
+    border-radius: 50%;
+  }
+
   .greetings {
     width: 100%;
     text-align: center;
@@ -36,7 +47,6 @@ const StyledAbout = styled.div`
     .about {
       width: 90%;
       text-align: center;
-      margin: 1rem 0 2rem 0;
       font-size: 1.1rem;
       color: ${(props) => props.theme.paragraphColor1};
     }
@@ -44,6 +54,7 @@ const StyledAbout = styled.div`
     .resume-div {
       display: flex;
       gap: 5px;
+      margin-top: 2rem;
 
       .resume,
       .resume-icon {
@@ -55,12 +66,13 @@ const StyledAbout = styled.div`
         font-size: 1.3rem;
       }
     }
+
     .see-more-arrow {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-top: 6rem;
+      margin-top: 2rem;
       color: ${(props) => props.theme.paragraphColor1};
 
       .arrow {
@@ -74,28 +86,29 @@ const StyledAbout = styled.div`
     }
   }
 
-  /* @media (max-width: 600px) {
-    .greetings-container {
-      flex-direction: column-reverse;
-      align-items: flex-start;
-    }
-  } */
-
   @media (max-width: 768px) {
     .container {
       height: calc(100vh - 96px);
     }
+
+    .img-div {
+      margin-bottom: 1.5rem;
+      width: 8.5rem;
+      height: 8.5rem;
+    }
+
     .greetings {
       font-size: 1.8rem;
+      margin-bottom: 2rem;
 
       .developer {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
       }
     }
 
     .about-div {
       .about {
-        font-size: 1rem;
+        font-size: 1.2rem;
       }
     }
   }
