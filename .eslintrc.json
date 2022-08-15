@@ -27,6 +27,7 @@
     "object-curly-newline": [0],
     "no-confusing-arrow": [0],
     "implicit-arrow-linebreak": [0],
+    "jsx-a11y/anchor-is-valid": [0],
     "indent": [0],
     "react/require-default-props": [0],
     "react/jsx-one-expression-per-line": [0],

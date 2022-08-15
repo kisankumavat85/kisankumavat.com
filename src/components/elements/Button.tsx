@@ -1,4 +1,4 @@
-import PrimaryButton from "../styles/components/button.style";
+import PrimaryButton from "../../styles/components/button.style";
 
 interface Props {
   label: string;

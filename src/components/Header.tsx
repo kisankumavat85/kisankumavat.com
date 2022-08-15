@@ -18,41 +18,29 @@ const Header = () => {
         <div className="nav-container">
           <MobileMenuButton />
           <Link href="/">
-            <a href="/#" className="name-link">
-              Kisan Kumavat
-            </a>
+            <a className="name-link">Kisan Kumavat</a>
           </Link>
           <div className="links-theme">
             <nav className="nav-links">
               <Link href="/">
-                <a
-                  href="/#"
-                  className={`nav-link ${pathname === "/" && "active"}`}
-                >
+                <a className={`nav-link ${pathname === "/" && "active"}`}>
                   Home
                 </a>
               </Link>
               <Link href="/blog">
-                <a
-                  href="/#"
-                  className={`nav-link ${pathname === "/blog" && "active"}`}
-                >
+                <a className={`nav-link ${pathname === "/blog" && "active"}`}>
                   Blog
                 </a>
               </Link>
               <Link href="/projects">
                 <a
-                  href="/#"
                   className={`nav-link ${pathname === "/projects" && "active"}`}
                 >
                   Projects
                 </a>
               </Link>
               <Link href="/space">
-                <a
-                  href="/#"
-                  className={`nav-link ${pathname === "/space" && "active"}`}
-                >
+                <a className={`nav-link ${pathname === "/space" && "active"}`}>
                   Space
                 </a>
               </Link>

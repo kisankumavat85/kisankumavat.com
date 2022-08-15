@@ -5,11 +5,6 @@ const StyledFooter = styled.footer`
   justify-content: center;
   margin-bottom: 5rem;
 
-  .divider {
-    width: 100%;
-    border-top: 2px solid ${(props) => props.theme.backgroundColor2};
-  }
-
   .links-social-container {
     display: grid;
     grid-template-columns: 1fr 1fr;

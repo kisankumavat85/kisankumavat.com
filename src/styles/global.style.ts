@@ -73,6 +73,11 @@ const GlobalStyle = createGlobalStyle<GlobalStyleProps>`
     margin-bottom: 1rem;
   }
 
+  .divider {
+    width: 100%;
+    border-top: 2px solid ${(props) => props.theme.backgroundColor2};
+  }
+
   /* Custom Scrollbar */
 
   ::-webkit-scrollbar {

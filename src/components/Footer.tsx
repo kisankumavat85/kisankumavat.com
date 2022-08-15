@@ -2,6 +2,7 @@ import Link from "next/link";
 import { SiGithub, SiLinkedin, SiTwitter } from "react-icons/si";
 import Container from "../styles/common.style";
 import StyledFooter from "../styles/components/footer.style";
+import ExternalLink from "./elements/ExternalLink";
 
 const Footer = () => {
   return (
@@ -33,21 +34,24 @@ const Footer = () => {
           </div>
           <div className="social-container">
             <p className="lets-connect">Find me on</p>
-            <Link href="https://twitter.com/KisanKumavat8">
-              <a href="/#" className="nav-link">
-                <SiTwitter />
-              </a>
-            </Link>
-            <Link href="https://www.linkedin.com/in/kisan-kumavat-966186190/">
-              <a href="/#" className="nav-link">
-                <SiLinkedin />
-              </a>
-            </Link>
-            <Link href="https://github.com/kisankumavat85">
-              <a href="/#" className="nav-link">
-                <SiGithub />
-              </a>
-            </Link>
+            <ExternalLink
+              className="nav-link"
+              href="https://twitter.com/KisanKumavat8"
+            >
+              <SiTwitter title="Twitter" />
+            </ExternalLink>
+            <ExternalLink
+              className="nav-link"
+              href="https://www.linkedin.com/in/kisan-kumavat-966186190/"
+            >
+              <SiLinkedin title="LinkedIn" />
+            </ExternalLink>
+            <ExternalLink
+              className="nav-link"
+              href="https://github.com/kisankumavat85"
+            >
+              <SiGithub title="GitHub" />
+            </ExternalLink>
           </div>
         </div>
       </Container>

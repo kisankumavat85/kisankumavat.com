@@ -12,47 +12,29 @@ const StyledSpace = styled.div`
 
     p {
       color: ${(props) => props.theme.paragraphColor1};
+      margin-bottom: 2rem;
     }
   }
 
   .space-section {
     margin-bottom: 3rem;
+    .books-section {
+      margin-bottom: 2rem;
+      .books {
+        margin: 0 0 0 1rem;
 
-    .project {
-      margin-bottom: 1.5rem;
-    }
+        li {
+          font-size: 1.1rem;
+          font-weight: 700;
+          color: ${(props) => props.theme.paragraphColor1};
+          margin-bottom: 1rem;
 
-    .project-name {
-      margin-bottom: 0.5rem;
-      font-size: 1.2rem;
-      color: ${(props) => props.theme.headingColor};
-    }
-
-    .project-name-arrow {
-      position: relative;
-      bottom: -3px;
-      font-size: 1.3rem;
-      margin-left: 0.3rem;
-    }
-
-    .project-description {
-      margin-left: 1.5rem;
-      margin-bottom: 0.5rem;
-      font-weight: 300;
-      color: ${(props) => props.theme.paragraphColor1};
-    }
-
-    .project-tech {
-      margin-left: 1.5rem;
-
-      span {
-        font-size: 0.8rem;
-        padding: 3px 5px;
-        margin-right: 5px;
-        font-weight: 500;
-        border-radius: 3px;
-        border: 1px solid ${(props) => props.theme.borderColor};
-        color: ${(props) => props.theme.paragraphColor1};
+          .authore {
+            font-weight: normal;
+            font-style: italic;
+            font-size: 0.9rem;
+          }
+        }
       }
     }
   }
