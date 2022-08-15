@@ -58,15 +58,12 @@ const StyledProjects = styled.div`
       }
 
       .project-description {
-        margin-left: 1.5rem;
         margin-bottom: 0.5rem;
         font-weight: 300;
         color: ${(props) => props.theme.paragraphColor1};
       }
 
       .project-tech {
-        margin-left: 1.5rem;
-
         p {
           display: inline-block;
           margin: 0 3px 3px 0;
