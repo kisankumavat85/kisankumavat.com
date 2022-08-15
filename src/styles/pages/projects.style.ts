@@ -68,6 +68,7 @@ const StyledProjects = styled.div`
 
         p {
           display: inline-block;
+          margin: 0 3px 3px 0;
           font-size: 0.8rem;
           padding: 3px 5px;
           font-weight: 500;
@@ -84,6 +85,7 @@ const StyledProjects = styled.div`
       .project {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 3rem;
 
         .project-image {
           min-width: 70%;
@@ -99,7 +101,7 @@ const StyledProjects = styled.div`
           margin-left: 0;
 
           p {
-            margin: 0;
+            margin: 0 3px 3px 0;
           }
         }
       }
