@@ -23,10 +23,12 @@ const Projects: FC = () => {
         <div className="page-intro">
           <h1>Projects</h1>
           <p>
-            Here are some of my Projects with Tech-Stack. Use search to filter
-            Project by name or Tech-Stack.
+            My primary tech stack is React, Next.js and TypeScript. But I am
+            also learning Node.js, Express and MongoDB. Here are some project
+            that I have build.
           </p>
-          <SearchInput setQuery={setQuery} placeholder="Search project" />
+          {/* <SearchInput setQuery={setQuery} placeholder="Search project" /> */}
+          <div className="divider" />
         </div>
 
         <section className="projects-section">

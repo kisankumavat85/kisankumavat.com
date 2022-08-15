@@ -12,6 +12,7 @@ const StyledProjects = styled.div`
 
     p {
       color: ${(props) => props.theme.paragraphColor1};
+      margin-bottom: 2rem;
     }
   }
 
