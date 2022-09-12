@@ -1,7 +1,9 @@
-import { FC } from "react";
+import { FC, useContext } from "react";
 import Image from "next/image";
 import Head from "next/head";
 import { MdDownload, MdKeyboardArrowDown } from "react-icons/md";
+
+import { ThemeContext } from "styled-components";
 
 // Components
 import FeaturedPosts from "../components/FeaturedPosts";
@@ -12,14 +14,16 @@ import { getFeaturedPosts } from "../apis";
 // Styles
 import StyledAbout from "../styles/pages/index.style";
 
-// Assets
-import profileImage from "../../public/images/profile_img.jpg";
-
 // Types
 import { HomePageProps } from "../types";
 
+// Assets
+import profileImage1 from "../../public/images/avatar.png";
+import profileImage2 from "../../public/images/avatar2.png";
+
 const Home: FC<HomePageProps> = (props) => {
   const { posts } = props;
+  const { theme } = useContext(ThemeContext);
 
   return (
     <>
@@ -30,7 +34,7 @@ const Home: FC<HomePageProps> = (props) => {
         <div className="container">
           <div className="img-div">
             <Image
-              src={profileImage}
+              src={theme === "light" ? profileImage1 : profileImage2}
               alt="Kisan Kumavat"
               layout="fill"
               objectFit="cover"
