@@ -2,7 +2,7 @@ import { FC } from "react";
 import Link from "next/link";
 
 // Styles
-import { StyledPosts } from "../styles/components/posts.style";
+import StyledPosts from "../styles/components/posts.style";
 
 // Types
 import { PostsProps } from "../types";
@@ -19,7 +19,7 @@ const Posts: FC<PostsProps> = (props) => {
             <Link key={post.slug} href={`/blog/${post.slug}`}>
               <div className="card">
                 <div className="card-title-date">
-                  <h4 className="card-title">{post.data.title} </h4>
+                  <h4 className="card-title">{post.data.title}</h4>
                   <p className="card-date">{post.data.date}</p>
                 </div>
                 <p className="card-info">{post.data.excerpt}</p>

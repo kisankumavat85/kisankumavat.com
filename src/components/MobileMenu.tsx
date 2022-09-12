@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { StyledMobileMenu } from "../styles/components/mobile-menu.style";
+import StyledMobileMenu from "../styles/components/mobile-menu.style";
 
 const MobileMenu = () => {
   return (
@@ -7,32 +7,26 @@ const MobileMenu = () => {
       <ul className="mobile-menu-container">
         <li>
           <Link href="/">
-            <a>Home</a>
+            <a href="/#">Home</a>
           </Link>
         </li>
         <li>
           <Link href="/blog">
-            <a>Blog</a>
+            <a href="/#">Blog</a>
           </Link>
         </li>
         <li>
-          <Link href="https://twitter.com/KisanKumavat8">
-            <a>Twitter</a>
+          <Link href="/projects">
+            <a href="/#">Projects</a>
           </Link>
         </li>
         <li>
-          <Link href="https://www.linkedin.com/in/kisan-kumavat-966186190/">
-            <a>LinkedIn</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="https://github.com/kisankumavat85">
-            <a>GitHub</a>
+          <Link href="/space">
+            <a href="/#">Space</a>
           </Link>
         </li>
       </ul>
     </StyledMobileMenu>
   );
 };
-
 export default MobileMenu;

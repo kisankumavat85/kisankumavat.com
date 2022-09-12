@@ -8,8 +8,8 @@ import { MDXRemote } from "next-mdx-remote";
 import withLayout from "../../components/HOC/withLayout";
 
 // Styles
-import { StyledSlug } from "../../styles/pages/slug.style";
-import "highlight.js/styles/atom-one-dark.css";
+import StyledSlug from "../../styles/pages/slug.style";
+import "highlight.js/styles/hybrid.css";
 
 // Types
 import { SlugPageProps, SlugPageStaticProps } from "../../types";
@@ -21,7 +21,7 @@ const Post: FC<SlugPageProps> = (props) => {
   return (
     <>
       <Head>
-        <title>Kisan Kumavat | {data.title}</title>
+        <title>Kisan Kumavat |{data.title}</title>
       </Head>
       <StyledSlug>
         <div className="page-intro">

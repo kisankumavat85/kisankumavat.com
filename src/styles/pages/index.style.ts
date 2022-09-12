@@ -1,79 +1,117 @@
 import styled from "styled-components";
 
-import { BLUE_SHADE_V1, DARK_SHADE_V5, LIGHT_SHADE_V1 } from "../colors.style";
+import { BLUE_SHADE_V1 } from "../colors.style";
 
-export const About = styled.div`
-  .greetings-container {
-    margin-top: 1rem;
+const StyledAbout = styled.div`
+  .container {
+    height: calc(100vh - 96px);
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-  }
-
-  .greetings {
-    font-weight: 700;
-    font-size: 4rem;
-    color: ${(props) => props.theme.headingColor};
-
-    span {
-      color: ${BLUE_SHADE_V1};
-    }
   }
 
   .img-div {
     position: relative;
-    width: 9rem;
-    height: 9rem;
+    width: 8rem;
+    height: 8rem;
+    margin-bottom: 1.5rem;
   }
 
   .img-div img {
     border-radius: 50%;
   }
 
-  .about {
-    margin: 1rem 0 3rem 0;
-    color: ${(props) => props.theme.paragraphColor1};
+  .greetings {
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 3rem;
+    color: ${(props) => props.theme.headingColor};
+
+    .kisan {
+      color: ${BLUE_SHADE_V1};
+    }
+
+    .developer {
+      font-size: 6rem;
+    }
   }
 
-  .contact-cv-container {
+  .about-div {
     display: flex;
-    margin-bottom: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    .contact-conatiner {
+    .about {
+      width: 90%;
+      text-align: center;
+      font-size: 1.1rem;
+      color: ${(props) => props.theme.paragraphColor1};
+    }
+
+    .resume-div {
       display: flex;
+      gap: 5px;
+      margin-top: 2rem;
 
-      .contact-item {
-        cursor: pointer;
-        margin-right: 1rem;
-        font-size: 1.5rem;
+      .resume,
+      .resume-icon {
         color: ${(props) => props.theme.paragraphColor1};
+        background-color: ${(props) => props.theme.backgroundColor1};
+      }
+
+      .resume-icon {
+        font-size: 1.3rem;
       }
     }
-    .cv-container {
-      /* border: 1px solid ${DARK_SHADE_V5}; */
-    }
-  }
 
-  @media (max-width: 600px) {
-    .greetings-container {
-      flex-direction: column-reverse;
-      align-items: flex-start;
+    .see-more-arrow {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2rem;
+      color: ${(props) => props.theme.paragraphColor1};
+
+      .arrow {
+        font-size: 2rem;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+      }
+
+      span {
+        font-size: 1rem;
+      }
     }
   }
 
   @media (max-width: 768px) {
-    .greetings {
-      margin-top: 1rem;
-      font-size: 2.5rem;
+    .container {
+      height: calc(100vh - 96px);
     }
 
     .img-div {
-      height: 8rem;
+      margin-bottom: 1.5rem;
       width: 8rem;
+      height: 8rem;
     }
 
-    .about {
-      font-size: 1.1rem;
+    .greetings {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+
+      .developer {
+        font-size: 2.8rem;
+      }
+    }
+
+    .about-div {
+      .about {
+        font-size: 1rem;
+      }
     }
   }
 `;
+
+export default StyledAbout;

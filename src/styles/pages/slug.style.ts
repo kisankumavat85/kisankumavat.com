@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledSlug = styled.div`
+const StyledSlug = styled.div`
   margin-bottom: 2rem;
 
   .page-intro {
@@ -50,6 +50,10 @@ export const StyledSlug = styled.div`
     h6 {
       margin-bottom: 1rem;
       color: ${(props) => props.theme.headingColor};
+
+      a {
+        text-decoration: none;
+      }
     }
 
     ul,
@@ -65,6 +69,7 @@ export const StyledSlug = styled.div`
 
     a {
       color: ${(props) => props.theme.headingColor};
+      text-decoration: underline;
     }
 
     pre {
@@ -99,3 +104,5 @@ export const StyledSlug = styled.div`
     }
   }
 `;
+
+export default StyledSlug;

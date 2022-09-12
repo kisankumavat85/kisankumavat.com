@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledMobileMenu = styled.div`
+const StyledMobileMenu = styled.div`
   position: absolute;
   width: 100%;
   top: 6rem;
@@ -27,3 +27,5 @@ export const StyledMobileMenu = styled.div`
   @media (max-width: 768px) {
   }
 `;
+
+export default StyledMobileMenu;

@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
-export const StyledHeader = styled.header`
+const StyledHeader = styled.header`
   display: flex;
+  /* border-bottom: 1px solid ${(props) => props.theme.borderColor}; */
   justify-content: center;
 
   .nav-container {
@@ -22,11 +23,12 @@ export const StyledHeader = styled.header`
     align-items: center;
   }
 
-  nav {
-    width: 7rem;
+  .nav-links {
+    /* width: 7rem; */
     margin-right: 1rem;
     display: flex;
     justify-content: space-around;
+    gap: 1rem;
   }
 
   .nav-link {
@@ -45,3 +47,5 @@ export const StyledHeader = styled.header`
     }
   }
 `;
+
+export default StyledHeader;

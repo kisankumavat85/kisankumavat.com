@@ -1,6 +1,58 @@
 {
-  "extends": "next/core-web-vitals",
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["plugin:react/recommended", "airbnb", "plugin:import/typescript"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint"],
   "rules": {
-    "react/display-name": "off"
-  }
+    "react/jsx-filename-extension": [
+      1,
+      { "extensions": [".tsx", ".jsx", "js"] }
+    ],
+    "quotes": [1, "double"],
+    "arrow-body-style": [0],
+    "react/jsx-props-no-spreading": [0],
+    "no-plusplus": [0],
+    "comma-dangle": [0],
+    "no-unused-vars": [1],
+    "object-curly-newline": [0],
+    "no-confusing-arrow": [0],
+    "implicit-arrow-linebreak": [0],
+    "jsx-a11y/anchor-is-valid": [0],
+    "indent": [0],
+    "react/require-default-props": [0],
+    "react/jsx-one-expression-per-line": [0],
+    "import/no-extraneous-dependencies": [1],
+    "import/prefer-default-export": [1],
+    "react/function-component-definition": [0],
+    "linebreak-style": [1, "windows"],
+    "react/react-in-jsx-scope": 0,
+    "import/extensions": [
+      1,
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["*.tsx"],
+      "rules": {
+        "no-undef": "off"
+      }
+    }
+  ]
 }

@@ -1,12 +1,7 @@
 import styled from "styled-components";
-import {
-  DARK_SHADE_V3,
-  DARK_SHADE_V4,
-  DARK_SHADE_V5,
-  LIGHT_SHADE_V1,
-} from "../colors.style";
+import { DARK_SHADE_V5, LIGHT_SHADE_V1 } from "../colors.style";
 
-export const StyledContact = styled.div`
+const StyledContact = styled.div`
   .page-intro {
     h1 {
       font-size: 3rem;
@@ -31,3 +26,5 @@ export const StyledContact = styled.div`
     }
   }
 `;
+
+export default StyledContact;

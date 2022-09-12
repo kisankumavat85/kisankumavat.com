@@ -1,4 +1,4 @@
-import { PrimaryButton } from "../styles/components/button.style";
+import PrimaryButton from "../../styles/components/button.style";
 
 interface Props {
   label: string;
@@ -7,7 +7,7 @@ interface Props {
 
 const Button = (props: Props) => {
   const { label, primary } = props;
-  return <PrimaryButton primary>{label}</PrimaryButton>;
+  return <PrimaryButton primary={primary}>{label}</PrimaryButton>;
 };
 
 export default Button;

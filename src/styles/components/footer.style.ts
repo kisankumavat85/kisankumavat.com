@@ -1,14 +1,9 @@
 import styled from "styled-components";
 
-export const StyledFooter = styled.footer`
+const StyledFooter = styled.footer`
   display: flex;
   justify-content: center;
-  margin-bottom: 1rem;
-
-  .divider {
-    width: 100%;
-    border-top: 2px solid ${(props) => props.theme.backgroundColor2};
-  }
+  margin-bottom: 5rem;
 
   .links-social-container {
     display: grid;
@@ -50,3 +45,5 @@ export const StyledFooter = styled.footer`
     }
   }
 `;
+
+export default StyledFooter;
