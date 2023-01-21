@@ -20,6 +20,7 @@ import { HomePageProps } from "../types";
 // Assets
 import profileImage1 from "../../public/images/avatar.png";
 import profileImage2 from "../../public/images/avatar2.png";
+// import ResumeFile from "../../public/files/resume_v7.pdf";
 
 const Home: FC<HomePageProps> = (props) => {
   const { posts } = props;
@@ -51,12 +52,16 @@ const Home: FC<HomePageProps> = (props) => {
               React, Next.js and TypeScript to build modern Web Apps. Currently
               working as Jr. Software Engineer.<span>&quot;</span>
             </p>
-            <div className="resume-div">
+            <a
+              className="resume-div"
+              href="/files/resume_v7.pdf"
+              download="Resume-Kisan Kumavat"
+            >
               <span className="resume">Resume </span>
               <div className="resume-icon">
                 <MdDownload />
               </div>
-            </div>
+            </a>
             <div className="see-more-arrow">
               <span>See Work</span>
               <MdKeyboardArrowDown className="arrow" />
