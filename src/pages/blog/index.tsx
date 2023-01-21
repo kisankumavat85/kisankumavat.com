@@ -25,11 +25,9 @@ const Blog: FC<BlogPageProps> = (props) => {
   useEffect(() => {
     const trimedQuery = query.trim();
     if (trimedQuery) {
-      const filtredPosts = posts.allPosts.filter((post) => {
-        return post.data.title
-          .toLowerCase()
-          .includes(trimedQuery.toLowerCase());
-      });
+      const filtredPosts = posts.allPosts.filter((post) =>
+        post.data.title.toLowerCase().includes(trimedQuery.toLowerCase())
+      );
       setFilteredPosts(filtredPosts);
     } else {
       setFilteredPosts(posts.allPosts);
@@ -59,7 +57,7 @@ const Blog: FC<BlogPageProps> = (props) => {
 };
 
 export const getStaticProps = async () => {
-  const allPosts = getAllPosts();
+  const allPosts = getAllPosts().filter((post) => post.data.isCompleted);
   const featuredPosts = getFeaturedPosts();
   return {
     props: {
