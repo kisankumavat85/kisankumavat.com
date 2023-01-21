@@ -24,10 +24,9 @@ const Space: FC = () => {
           <p>
             This is my space where I share things that I like to do when I am
             not infront of computer screen. I like reading Books and watching
-            Movies. Here are some of my favourite books and Movies.
+            Movies. Here are some of my favourite books.
           </p>
           <div className="divider" />
-          {/* <SearchInput setQuery={setQuery} placeholder="Search" /> */}
         </div>
 
         <section className="space-section">
@@ -38,17 +37,6 @@ const Space: FC = () => {
                 <li>
                   <p className="book-name">{book.name}</p>
                   <p className="authore">{`By ${book.authore} (${book.genre})`}</p>
-                </li>
-              ))}
-            </ol>
-          </div>
-          <div className="books-section">
-            <h2 className="heading2">Favourite Movies</h2>
-            <ol className="books">
-              {movies.map((movie) => (
-                <li>
-                  <p className="movie-name">{`${movie.name} (${movie.releaseYear})`}</p>
-                  <p className="authore">Director: {movie.director}</p>
                 </li>
               ))}
             </ol>
