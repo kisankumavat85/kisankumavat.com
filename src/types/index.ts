@@ -7,6 +7,7 @@ type PostMeta = {
   date: string;
   coverImage: string;
   readingTime: string;
+  isCompleted: boolean;
 };
 
 export type PostMetaAndSlug = {
